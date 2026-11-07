@@ -1,0 +1,14 @@
+body { margin:0 auto; max-width:42rem; padding:2.5rem 1.25rem 4rem;
+       font:16px/1.8 -apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC",sans-serif;
+       color:#1c2233; background:#f5f7fb; }
+h1 { font-size:1.6rem; margin:0 0 .25rem; }
+h2 { font-size:1.05rem; margin:2.2rem 0 .6rem; }
+a { color:#2343c4; }
+.sub { color:#5b6475; margin:0 0 2rem; font-size:.9rem; }
+ul { padding-left:1.2rem; } li { margin:.35rem 0; }
+hr { border:0; border-top:1px solid #e1e5ee; margin:2.5rem 0; }
+.en { color:#3b4456; }
+@media (prefers-color-scheme: dark) {
+  body { color:#e6e9f0; background:#0e1015; }
+  a { color:#9db1ff; } .sub, .en { color:#a4abba; } hr { border-top-color:#2e333d; }
+}
