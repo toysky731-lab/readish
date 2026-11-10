@@ -14,12 +14,24 @@
 <ul>
   <li>姓名、電郵、電話、生日</li>
   <li>位置、通訊錄、相片</li>
-  <li>你讀了甚麼、收藏了哪些生詞、測驗分數</li>
+  <li>你收藏了哪些生詞，以及你在 app 內看到或輸入的任何文字</li>
 </ul>
-<p>這個 app 沒有帳號系統、沒有廣告、沒有追蹤，也沒有使用分析工具。</p>
+<p>這個 app 沒有帳號系統、沒有廣告，也不會追蹤你在其他 app 或網站的活動。</p>
+
+<h2>匿名使用統計</h2>
+<p>為了知道哪些功能和文章有用，app 會用 PostHog（伺服器位於歐盟）記錄匿名的使用統計：</p>
+<ul>
+  <li>打開 app、切換分頁；</li>
+  <li>完成程度選擇（選了哪個程度、有沒有做測驗）；</li>
+  <li>打開了哪篇文章或故事（文章編號、分類、程度、是否免費），有沒有播放朗讀；</li>
+  <li>測驗的得分和題數；</li>
+  <li>收藏生詞後生詞本的數目（不包括生詞本身）；</li>
+  <li>付費頁從哪裏打開，以及購買或恢復購買的結果（方案、成功或取消）。</li>
+</ul>
+<p>這些紀錄只附帶 PostHog 在 app 內隨機產生的匿名識別碼，不會連繫到你的身份，也不會用來追蹤或賣廣告。我們關閉了 PostHog 從 IP 位址推算地點的功能。</p>
 
 <h2>只留在你裝置上的資料</h2>
-<p>閱讀進度、生詞本、溫習排程、測驗分數、程度測驗結果、每日目標和提醒時間，全部只存在你的裝置，不會上傳。主畫面小工具讀取的連續天數和生詞，也只在裝置內部傳遞。每日提醒是裝置本身排定的通知，不經任何伺服器。</p>
+<p>閱讀進度、生詞本、溫習排程、每日目標和提醒時間，全部只存在你的裝置，不會上傳。主畫面小工具讀取的連續天數和生詞，也只在裝置內部傳遞。每日提醒是裝置本身排定的通知，不經任何伺服器。</p>
 
 <h2>下載文章</h2>
 <p>新文章、朗讀錄音和封面圖片從我們放在 Cloudflare 的伺服器下載。這些請求不附帶任何關於你的資料；和瀏覽任何網站一樣，Cloudflare 在傳送內容時會看到你的 IP 位址，我們沒有保存這些紀錄。</p>
@@ -45,7 +57,8 @@
 <hr>
 <h2 class="en">English summary</h2>
 <div class="en">
-<p>Readish has no accounts, no ads, no tracking and no analytics. Your reading progress, saved words, review schedule, quiz scores, level and reminder time stay on your device; reminders are local notifications and the widget reads data only on the device.</p>
+<p>Readish has no accounts, no ads and no tracking. Your reading progress, saved words, review schedule and reminder time stay on your device; reminders are local notifications and the widget reads data only on the device.</p>
+<p>The app sends anonymous usage statistics to PostHog (EU servers): app opens and tab switches, the level chosen at setup, which article or story was opened (its id, category, level and whether it is free) and whether its audio was played, quiz scores, the size of the word book (never the words), and where the paywall was opened and how a purchase or restore ended. They carry only a random anonymous id that PostHog creates in the app, are not linked to you and are not used for tracking or advertising; PostHog's IP-to-location lookup is turned off.</p>
 <p>Articles, audio and pictures are downloaded from our Cloudflare servers without any information about you. Purchases are handled by Apple; we never see payment or Apple Account details. To unlock Premium articles the app sends Apple's signed purchase record and the app's device identifier (identifierForVendor) to our server, which keeps only a one-way hash of the identifier with the purchase's ID for at most two days, to limit one purchase to five devices a day. On launch the app reads a version-check file from GitHub Pages; that request carries none of your data.</p>
 <p>Questions: <a href="mailto:toysky731@icloud.com">toysky731@icloud.com</a>.</p>
 </div>
